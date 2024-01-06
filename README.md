@@ -1,38 +1,20 @@
-# DDL exercise
-Creating Tables:
-Create a table named Movies with the following columns:
-movie_id (integer)
-title (varchar, maximum length 100)
-director (varchar, maximum length 50)
-release_year (integer)
-genre (varchar, maximum length 50)
+Exercise Description:
+Suppose we have two tables: Employees and Departments. The Employees table contains information about company employees, and the Departments table contains details about different departments within the company. You are tasked with creating these tables and establishing a relationship between them using primary and foreign keys.
 
-Altering Tables:
-Alter the Movies table to add a new column named rating of type decimal(3, 1).
+1. Create the Departments table- colums -> department id,department name(should not be null),location
+2.  Create the Employees table: colum: employee id , employee name(should not be null) and one foreign key that is department id from department table
+3. Populate the Departments table with some sample data:
+4. Populate the Employees table with sample data:
 
-Dropping Tables:
-Create a new table named Students with columns:
+   Exercise Tasks:
+1.Add a new department called 'IT' in the Departments table and assign an employee (e.g., EmployeeID 106, 'David Wilson') to this department in the Employees table.
 
-student_id (integer)
-student_name (varchar, maximum length 50)
-age (integer)
-grade (varchar, maximum length 2)
-Then, drop the Students table.
+2.Update the location of the 'HR' department from 'New York' to 'Chicago'.
 
-Truncating Tables:
-Create a table named Events with columns:
+3.Delete the employee named 'Michael Brown' from the Employees table.
 
-event_id (integer)
-event_name (varchar, maximum length 100)
-date (date)
-location (varchar, maximum length 100)
-Insert some sample data into the Events table. Once done, truncate the table to remove all records while keeping the table structure intact.
-
-Renaming Tables:
-Create a table named Restaurants with columns:
-
-restaurant_id (integer)
-name (varchar, maximum length 50)
-cuisine (varchar, maximum length 50)
-location (varchar, maximum length 100)
-Rename the table to DiningSpots.
+Expected Results:
+Task 1 should successfully add the 'IT' department and assign an employee to it.
+Task 2 should update the location of the 'HR' department.
+Task 3 should remove the employee 'Michael Brown' from the table.
+You can practice these tasks and SQL statements against the created tables to understand how primary keys (PKs) and foreign keys (FKs) work together to establish relationships between tables in a database.
